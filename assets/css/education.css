@@ -1,0 +1,198 @@
+@import url(fontawesome-all.min.css);
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 0.1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+body{
+  background: #ff7979;
+}
+::selection{
+    color: #fff;
+    background: #ff7979;
+  }
+.wrapper{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper .center-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #ff5757;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+.wrapper .row{
+    display: flex;
+    justify-content: flex-start;
+}
+.wrapper .row-1{
+    justify-content: flex-start;
+  }
+  .wrapper .row-2{
+    justify-content: flex-end;
+  }
+.wrapper .row section{
+  background: #2B343A;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+
+    margin-left: 0px;
+    margin-right: 00px;
+    background: #333C42;
+    border-radius: 2px;
+    padding: 1em;
+
+    .timeline-content-info {
+        background: #2B343A;
+        padding: 6px 5px;
+        color: rgba(255,255,255,0.7);
+        font-size: 12px;
+        box-shadow:  inset 0 2px 0 rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        i {
+        margin-right: 5px;
+        }
+        .timeline-content-info-title, .timeline-content-info-date {  
+        width: calc(50% - 2px);
+        display: inline-block;
+        }
+        @media (max-width: 500px) {
+        .timeline-content-info-title, .timeline-content-info-date {  
+            display: block;
+            width:100%;
+        } 
+        }
+    }
+    .content-skills {
+        font-size: 12px;
+        padding:0;
+        margin-bottom: 0;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+        background: #40484D;
+        border-radius: 2px;
+        display: inline-block;
+        padding: 2px 10px;
+        color: rgba(255,255,255,0.7);
+        margin: 3px 2px;
+        text-align: center;
+        flex-grow: 1;
+        }
+    }
+    .cd-date {
+      color: rgba(255,255,255,.7);
+      font-size: 13px;
+      font-size: 1rem;
+      display: inline-block;
+      }
+}
+.wrapper .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #2B343A;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+  }
+  .row-1 section::before{
+    right: -7px;
+  }
+  .row-2 section::before{
+    left: -7px;
+  }
+  .row section .icon-education,
+  .center-line .scroll-icon-education{
+    position: absolute;
+    background: #ff5757;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 0 0 4px #ff5757;
+    font-family: 'Font Awesome 5 Free';
+  }
+  .center-line .scroll-icon-education{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+  }
+  .row-1 section .icon-education{
+    top: 15px;
+    right: -60px;
+  }
+  .row-2 section .icon-education{
+    top: 15px;
+    left: -60px;
+  }
+  .row section .details,
+  .row section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row section .details .title{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .row section p{
+    margin: 10px 0 17px 0;
+  }
+  .row section .bottom a{
+    text-decoration: none;
+    background: #ff7979;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    /* font-size: 17px; */
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+  .row section .bottom a:hover{
+    transform: scale(0.97);
+  }
+
+  @media(max-width: 790px){
+    .wrapper .center-line{
+      left: 40px;
+    }
+    .wrapper .row{
+      margin: 30px 0 3px 60px;
+    }
+    .wrapper .row section{
+      width: 100%;
+    }
+    .row-1 section::before{
+      left: -7px;
+    }
+    .row-1 section .icon-education{
+      left: -60px;
+    }
+  }
+  @media(max-width: 440px){
+    .wrapper .center-line,
+    .row section::before,
+    .row section .icon-education{
+      display: none;
+    }
+    .wrapper .row{
+      margin: 10px 0;
+    }
+  }

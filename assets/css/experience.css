@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.stroke-transparent {
+ -webkit-text-stroke: 1.2px #000;
+ -webkit-text-fill-color: transparent;
+}
+.card{
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    overflow-x: hidden;
+    margin-bottom: 10px;
+    padding: 40px 30px 30px 30px;
+    background-color: #2B343A;
+    border-radius: 6px;
+    width: 100%;
+}
+.card > p{
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 2;
+}
+.card > p > i{
+    font-size: 18px;
+}
+.card > a{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    border: 0;
+    height: auto;
+    background: transparent;
+    color: #097bbf;
+    outline: none;
+    cursor: pointer;
+}
+.card > ul{
+    list-style-type: none;
+}
+.tags{
+    font-size: 17px;
+    font-weight: bolder;
+}
+.tags ~ a{
+    display: none !important;
+}
+.tags span{
+    font-size: 14px;
+    font-weight: normal;
+    color: #0e141e;
+}
+.tags span span{
+    color: #738f93;
+}
+@media screen and (max-width:1090px){
+    #profile{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:850px){
+    #container{
+        display: block;
+    }
+    #profile{
+        width: 90%;
+    }
+    .card{
+        margin: 0 5%;
+        margin-bottom: 30px;
+    }
+}
+
+
+section.resume-section {
+border-bottom: 1px solid #dee2e6;
+padding-top: 5rem !important;
+padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+min-width: none;
+}
+
+@media (min-width: 768px) {
+section.resume-section {
+    min-height: 100vh;
+}
+section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+}
+}
+
+@media (min-width: 992px) {
+section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+}
+
+.icon-experience{
+    position: relative;
+    background: #ff5757;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #ff5757;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.text-experiance-date{
+    color: #ff5757;
+}
